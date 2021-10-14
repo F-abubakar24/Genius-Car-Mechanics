@@ -1,0 +1,88 @@
+.services-main-container {
+    padding-top: 100px;
+}
+.services-main-container > h2 {
+    font-weight: 700;
+    color: white;
+}
+.services-main-container > h2::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    background-color: #bf1650;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.service-container {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px auto;
+    width: 1100px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.single-service {
+    border: 1px solid #bf1650;
+    box-shadow: 0px 5px 20px -10px white;
+    border-radius: 8px;
+}
+.service-img img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.service-info {
+    padding: 0px 12px;
+    padding-top: 15px;
+    font-size: 17px;
+}
+.service-info h3 {
+    font-size: 22px;
+}
+.service-info h4 {
+    font-size: 18px;
+}
+.service-info p {
+    font-size: 17px;
+}
+
+.service-info h4 span {
+    color: #ec5975;
+}
+
+/* ======================================= */
+/* =========== making responsive */
+/* ======================================= */
+
+@media only screen and (max-width: 688px) {
+    .services-main-container {
+        padding-top: 20px;
+    }
+    .service-container {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 92%;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .services-main-container {
+        padding-top: 20px;
+    }
+    .service-container {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 92%;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
